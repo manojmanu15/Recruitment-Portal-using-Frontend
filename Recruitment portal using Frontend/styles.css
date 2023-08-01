@@ -1,0 +1,412 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2a4568;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Apply animation to specific sections */
+.hero, .job-listing, .candidate-profiles, .testimonials, .contact {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hover animation for buttons */
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Testimonials animation */
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+/* Image Section */
+h2{
+  text-align: center;
+}
+.image-section {
+  background-image: url("comp2.png");
+  margin-top: 3rem;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+  padding: 150px 0; 
+}
+.heading h2 {
+  margin-top: 2rem;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.image-section p {
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.how-it-works {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.how-it-works h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.step {
+  flex-basis: calc(33.33% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+.step img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+.step p {
+  text-align: center;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+/*services*/
+.services {
+  padding: 50px 0;
+}
+/* ... (previous CSS styles) ... */
+
+/* Styling for Services Section */
+.services {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 40px;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.service-details:hover {
+  transform: translateY(-5px);
+}
+
+/* ... (rest of the CSS styles) ... */
+.job-listing {
+  flex-basis: calc(50% - 20px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.job-listing h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.job-listing p {
+  margin-bottom: 15px;
+}
+
+.job-listing .btn {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.job-listing .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Customizing Candidate Profiles Section */
+.candidate-profiles {
+  padding: 50px 0;
+}
+
+.candidate-profiles h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.candidates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.candidate {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+}
+
+.candidate img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 60%;
+}
+
+.candidate h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 80%;
+}
+
+.candidate p {
+  margin-bottom: 10px;
+  margin-left: 80%;
+}
+
+.candidate-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.candidate-profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.candidate-profile img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.candidate-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+/* Testimonials */
+.testimonials {
+  background-color: #2a4568;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.testimonial {
+  flex-basis: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.testimonial img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-content span {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.testimonial {
+
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.testimonial p {
+  font-size: 18px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact h2 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
